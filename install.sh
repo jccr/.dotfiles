@@ -10,13 +10,16 @@ eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 
 brew doctor
 
-brew install stow zsh vim direnv ccat lsd socat go
+brew install stow zsh vim direnv ccat lsd socat
 
 stow -t ~ stow
 
 stow zsh
 stow wsl
 stow git
+
+brew install ruby go python node
+
 stow go
 
 echo "/home/linuxbrew/.linuxbrew/bin/zsh" | sudo tee -a
