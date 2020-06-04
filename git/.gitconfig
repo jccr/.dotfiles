@@ -6,6 +6,7 @@
     pager = diff-so-fancy | less --tabs=4 -RFX
     editor = vim
     excludesfile = ~/.gitignore
+	autocrlf = false
 
 # From there, sections are in alphabetic order
 
@@ -69,3 +70,5 @@
 [user]
 	email = c@rlos.email
 	name = Juan Carlos Corona Romero
+[credential]
+	helper = /mnt/c/Program\\ Files/Git/mingw64/libexec/git-core/git-credential-manager.exe
