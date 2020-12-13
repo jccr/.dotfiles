@@ -4,8 +4,8 @@ PROFILE_STARTUP=false
 # .zshenv is always sourced, define here exported variables that should
 # be available to other programs.
 
-# export VISUAL=subl
-export EDITOR=micro
+export VISUAL="code --wait"
+export EDITOR=vim
 # export PAGER=more
 export PATH="$HOME/.local/bin:/usr/local/bin:$PATH"
 

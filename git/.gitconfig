@@ -4,8 +4,10 @@
 
 [core]
     pager = diff-so-fancy | less --tabs=4 -RFX
-    editor = vim
+	editor = code --wait
     excludesfile = ~/.gitignore
+	quotePath = false
+	commitGraph = true
 
 # From there, sections are in alphabetic order
 
@@ -69,3 +71,7 @@
 [user]
 	email = c@rlos.email
 	name = Juan Carlos Corona Romero
+[receive]
+	advertisePushOptions = true
+[gc]
+	writeCommitGraph = true

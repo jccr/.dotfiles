@@ -1,0 +1,1 @@
+export PATH="$PATH:$HOMEBREW_PREFIX/opt/python@3.8/libexec/bin"

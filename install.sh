@@ -20,7 +20,14 @@ stow git
 
 brew install ruby go python node
 
+pip3 install click
+
+# Install Deno
+curl -fsSL https://deno.land/x/install/install.sh | sh
+
 stow go
+stow deno
+stow python3
 
 echo "/home/linuxbrew/.linuxbrew/bin/zsh" | sudo tee -a
 
