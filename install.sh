@@ -9,9 +9,7 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 
 brew doctor
-
-brew install stow zsh antibody vim direnv ccat lsd socat
-
+brew bundle
 
 stow -t ~ stow
 
@@ -20,6 +18,7 @@ antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh
 
 stow wsl
 stow git
+git lfs install
 
 brew install ruby go python node
 
