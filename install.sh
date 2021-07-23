@@ -10,11 +10,14 @@ eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 
 brew doctor
 
-brew install stow zsh vim direnv ccat lsd socat
+brew install stow zsh antibody vim direnv ccat lsd socat
+
 
 stow -t ~ stow
 
 stow zsh
+antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh
+
 stow wsl
 stow git
 
@@ -38,6 +41,6 @@ sudo usermod -s /home/linuxbrew/.linuxbrew/bin/zsh $CURRENT_USER
 
 ln -s /mnt/c/Users/$WIN_USER ~/winhome
 
-go get -d github.com/jstarks/npiperelay
+GOOS=windows go get -d github.com/jstarks/npiperelay
 mkdir -p ~/winhome/.wsl/
 GOOS=windows go build -o ~/winhome/.wsl/npiperelay.exe github.com/jstarks/npiperelay
