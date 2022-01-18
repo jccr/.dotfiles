@@ -43,3 +43,6 @@ ln -s /mnt/c/Users/$WIN_USER ~/winhome
 GOOS=windows go get -d github.com/jstarks/npiperelay
 mkdir -p ~/winhome/.wsl/
 GOOS=windows go build -o ~/winhome/.wsl/npiperelay.exe github.com/jstarks/npiperelay
+
+# Install WSL Hello sudo
+./wsl/wsl-hello-sudo/install.sh
