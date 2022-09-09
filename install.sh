@@ -3,7 +3,7 @@
 # Install Homebrew
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-eval $(brew shellenv)
+eval $(/opt/homebrew/bin/brew shellenv)
 
 brew doctor
 
@@ -23,5 +23,4 @@ curl -fsSL https://deno.land/x/install/install.sh | sh
 
 stow go
 stow deno
-stow python3
 stow pyenv
