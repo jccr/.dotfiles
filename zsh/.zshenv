@@ -7,7 +7,6 @@ PROFILE_STARTUP=false
 export VISUAL="code --wait"
 export EDITOR=vim
 # export PAGER=more
-export PATH="$HOME/.local/bin:/usr/local/bin:$PATH"
 
 # load zsh config files
 
@@ -21,3 +20,4 @@ if test ! -z "$env_config_files" ;
 fi
 
 export TERM="xterm-256color"
+export NVM_AUTO_USE=true

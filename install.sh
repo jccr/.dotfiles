@@ -14,7 +14,7 @@ stow -t ~ stow
 stow zsh
 stow git
 
-brew install ruby go python node
+brew install ruby go python node pipx
 
 pip3 install click
 
@@ -24,3 +24,4 @@ curl -fsSL https://deno.land/x/install/install.sh | sh
 stow go
 stow deno
 stow python3
+stow pyenv

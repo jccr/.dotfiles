@@ -1,3 +1,5 @@
+export PATH="/opt/homebrew/bin:/usr/local/bin:$HOME/.local/bin:$PATH"
+
 # Start zsh setup profiling if it was enabled
 if [[ "$PROFILE_STARTUP" == true ]]; then
     unsetopt xtrace
@@ -23,3 +25,6 @@ if [[ "$PROFILE_STARTUP" == true ]]; then
     unsetopt xtrace
     exec 2>&3 3>&-
 fi
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+

@@ -16,6 +16,8 @@ if ! zgen saved; then
 #  zgen oh-my-zsh plugins/ssh-agent
   zgen oh-my-zsh plugins/git
   zgen oh-my-zsh plugins/shrink-path
+  zgen oh-my-zsh plugins/rbenv
+  zgen oh-my-zsh plugins/pyenv
   zgen load zdharma/fast-syntax-highlighting
   zgen load romkatv/powerlevel10k powerlevel10k
 
@@ -23,6 +25,8 @@ if ! zgen saved; then
   zgen load zsh-users/zsh-completions src
 
   zgen load agkozak/zsh-z
+
+  zgen load lukechilds/zsh-nvm
 
   # generate the init script from plugins above
   zgen save
