@@ -14,7 +14,7 @@ stow -t ~ stow
 stow zsh
 stow git
 
-brew install ruby go python node pipx
+brew install go ruby python rbenv pyenv pipx
 
 pip3 install click
 
